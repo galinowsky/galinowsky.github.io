@@ -2,7 +2,6 @@
 
 @import "_variables";
 
-
 body {
   background: white;
   color: black;
@@ -14,15 +13,63 @@ body {
 }
 section {
   width: 100%;
-  height:427px ;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+.hello {
+  &__content {
+    width: 982px;
+    height: 600px;
+    position: relative;
+  }
 
-.profile-pic {
-  height:178px;
-  width: 178px;
-  border-radius: 50%;
+  &__img-box {
+    width: 403px;
+    height: 228px;
+    margin: auto;
+    position: relative;
+  }
+  &__img {
+    height: 178px;
+    width: 178px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+  }
+  &__cloud {
+    position: absolute;
+    top: 0px;
+    left: 178px;
+    height: 94.66px;
+    width: 225px;
+   
+
+  }
+  &__text {
+    background-color: $blue;
+    color: white;
+    border-radius: 16px;
+    height: 72px;
+    font-weight: bold;
+    font-size: 32px;
+    text-align: center;
+    padding: auto  ;
+  }
+}
+
+.skills {
+  background: $blue;
+}
+.footer {
+  background: $blue_light;
+  width: 100%;
+  height: 568px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
