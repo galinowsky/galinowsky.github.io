@@ -3,175 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
-    <meta name="description" content="Your project description" />
+    <title>Portfolio Jakub Galiński</title>
+    <meta
+      name="description"
+      content="Jakub Galinski portfolio, skills & projects"
+    />
     <!-- Title -->
-    <meta property="og:title" content="" />
+    <meta property="og:title" content="Portfolio Jakub Galiński" />
     <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
+    <meta
+      property="og:description"
+      content="Jakub Galinski portfolio, skills & projects"
+    />
     <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
+    <meta property="og:url" content="https://galinowsky.github.io" />
     <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
     <meta
       property="og:image"
       content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png"
     />
-
-    <!-- uncomment the line below to enable PWA  -->
-    <!-- <link rel="manifest" href="manifest.json" /> -->
-
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="pwa/apple-icon-180.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="167x167"
-      href="pwa/apple-icon-167.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="152x152"
-      href="pwa/apple-icon-152.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="120x120"
-      href="pwa/apple-icon-120.png"
-    />
-
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-2732.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2732-2048.png"
-      media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2388.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2388-1668.png"
-      media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1668-2224.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2224-1668.png"
-      media="(device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1536-2048.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2048-1536.png"
-      media="(device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2688.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2688-1242.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1125-2436.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2436-1125.png"
-      media="(device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-828-1792.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1792-828.png"
-      media="(device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1242-2208.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-2208-1242.png"
-      media="(device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-750-1334.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1334-750.png"
-      media="(device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-640-1136.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)"
-    />
-    <link
-      rel="apple-touch-startup-image"
-      href="pwa/apple-splash-1136-640.png"
-      media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
   </head>
   <body>
-    <section class="hello">
-      <article class="hello__content">
-        <div class="hello__img-box">
+    <main>
+      <section class="hero">
+        <div class="hero__image-container">
+          <span class="hero__image-circle">
           <img
             src="../assets/img/ryjson.jpg"
             alt="Photo of my face"
-            class="hello__img"
+            class="hero__image"
           />
-          <div class="hello__cloud">
-            <div class="hello__text">Hello There!</div>
-            <span class="hello__cloud-end">O</span>
-          </div>
+        </span>
+          <span class="hero__cloud">
+            Hello There!
+          </span>
         </div>
-
-        <h1>
+        <div class="hero__description">
+        <h1 class= "hero__header">
           My name is Jakub Galiński and i'm aspiring
           <strong>Frontend Developer!</strong>
         </h1>
-        <p>
-          I hope that You will be interested in checking <a>my skills.</a> Don't
-          forget to have a glimpse at <a>my projects.</a> Currently i'm looking
-          for a new challanges so if You have one - please <a>contact me</a>
+        <p class="hero__paragraph">
+          I hope that You will be interested in checking <a href="#skills">my skills.</a> Don't
+          forget to have a glimpse at <a href="#projects">my projects.</a> Currently i'm looking
+          for a new challanges so if You have one - please <a href="#contact">contact me</a>
         </p>
-      </article>
-    </section>
-    <section class="skills">
-      <article>
+        <a class="hero__contact" href="mailto:jgalinski96@gmail.com">jgalinski96@gmail.com</a>
+      </div>
+      </section>
+      <section class="skills" id="skills">
         <h2>My Skills</h2>
         <div class="skills__list">
           <div>
@@ -184,10 +65,8 @@
             <h3>Want to learn</h3>
           </div>
         </div>
-      </article>
-    </section>
-    <section class="projects">
-      <article>
+      </section>
+      <section class="projects" id="projects">
         <header>
           <h2>Recent Projects</h2>
           I starter my frontendt developer path in Febuary 2020. Since then I've
@@ -197,18 +76,18 @@
         <div class="github">
           <div class="github-proj"></div>
         </div>
-      </article>
-    </section>
-    <footer class="footer">
-      <header>
-        <h2>Contact me</h2>
-        I'm open for the new oportunieties. If you have one for me , we should
-        talk!
-      </header>
-      <i class="contact-icon">GH</i>
-      <i class="contact-icon">Insta</i>
-      <i class="contact-icon">FB</i>
-      <mailto></mailto>
-    </footer>
+      </section>
+      <footer class="footer" id="contact">
+        <header>
+          <h2>Contact me</h2>
+          I'm open for the new oportunieties. If you have one for me , we should
+          talk!
+        </header>
+        <i class="contact-icon">GH</i>
+        <i class="contact-icon">Insta</i>
+        <i class="contact-icon">FB</i>
+        <mailto></mailto>
+      </footer>
+    </main>
   </body>
 </html>
