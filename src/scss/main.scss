@@ -5,12 +5,15 @@
 body {
   background: white;
   color: black;
+ 
+  font-family: 'Nunito', sans-serif;
+}
+main {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: 'Nunito', sans-serif;
 }
 section {
   width: 100vw;
@@ -21,7 +24,7 @@ section {
   justify-content: center;
 }
 .hero {
-padding: 0px 16px 88px;
+padding: 0 0 88px;
   &__front {
     color: $blue;
   }
@@ -33,7 +36,7 @@ padding: 0px 16px 88px;
     width: 212px;
     height: 130px;
     position: relative;
-    margin-top:64px 54px 40px 54px;
+    margin:0 54px 40px 54px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,7 +52,7 @@ padding: 0px 16px 88px;
       height: 128px;
       width: 128px;
       position: absolute;
-      bottom: 0;
+      bottom: -16px;
       border-radius: 50%;
     }
   }
@@ -82,12 +85,14 @@ padding: 0px 16px 88px;
   font-size: 26px;
   font-weight: bold;
   line-height: 32px;
+  margin: 0 16px 16px;
    }
    &__paragraph{
     text-align: center;
     font-size: 16px;
     font-weight: 300;
     line-height: 32px;
+    margin: 0 16px;
      
   }
   &__contact {
@@ -96,7 +101,7 @@ padding: 0px 16px 88px;
     background-color: $text_link;
     color: white;
     font-size: 20px;
-    line-height: 47px;
+    line-height: 45px;
     font-weight: 500;
     text-decoration: none;
     border-radius: 64px;
@@ -104,7 +109,6 @@ padding: 0px 16px 88px;
     vertical-align: central;
     margin: 48px 21px;
     display: inline-block;
-    padding-top: 5px;
   }
 }
 
