@@ -17,11 +17,11 @@ main {
 }
 section {
   width: 100vw;
-  height: 722px;
+  min-height: 722px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  justify-content: space-between;
 }
 .hero {
 padding: 0 0 88px;
@@ -111,9 +111,52 @@ padding: 0 0 88px;
     display: inline-block;
   }
 }
+ul > li::before{
+ 
+    content: url('../assets/img/small-tick_filled.svg');
+
+ 
+}
 
 .skills {
   background: $blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  &__emoji {
+    font-size: 64px;
+  }
+  &__list{
+    font-size: 18px;
+    line-height: 32px;
+    color: $blue_light;
+    list-style: none;
+    
+
+  }
+  &__header{
+    // position: absolute;
+    // top: 64px;
+    margin-top: 64px;
+    font-size: 36px;
+    font-weight: 500;
+    color: white;
+
+  }
+  &__category{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+    &--header{
+      font-size: 24px;
+      color: white;
+      font-weight: lighter;
+    }
+  }
 }
 .footer {
   background: $blue_light;
