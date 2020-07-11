@@ -24,7 +24,6 @@ section {
   justify-content: center;
 }
 .hero {
-padding: 0 0 88px;
   &__front {
     color: $blue;
   }
@@ -148,8 +147,9 @@ padding: 0 0 88px;
     list-style: none;
     display: flex;
     flex-direction: column;
+    width: 100%;
     justify-content: flex-start;
-width: 100%;
+
     
     &>li{
       display: flex;
@@ -157,6 +157,7 @@ width: 100%;
       flex-direction: row;
       align-items: center;
       justify-content: left;
+      font-weight: lighter;
     }
   }
   &__header{
@@ -173,8 +174,9 @@ width: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   width: 100%;
-   margin-bottom: 72px;
+    width: 100%;
+    margin-bottom: 72px;
+   
     &--header{
       font-size: 24px;
       color: white;
