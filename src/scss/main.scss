@@ -111,11 +111,23 @@ padding: 0 0 88px;
     display: inline-block;
   }
 }
-ul > li::before{
+// ul > li::before{
  
-    content: url('../assets/img/small-tick_filled.svg');
+//     content: url('../assets/img/small-tick_filled.svg');
 
  
+// }
+.already-know>li:before{
+  content: url('../assets/img/small-tick.svg');
+  margin-right: 12px;
+}
+.know-something>li:before{
+  content: url('../assets/img/small-tick_filled.svg');
+  margin-right: 12px;
+}
+.want-learn>li:before{
+  content: url('../assets/img/bullet.svg');
+  margin-right: 12px;
 }
 
 .skills {
@@ -129,12 +141,21 @@ ul > li::before{
     font-size: 64px;
   }
   &__list{
-    font-size: 18px;
+    font-size: 16px;
     line-height: 32px;
     color: $blue_light;
     list-style: none;
-    
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    &>li{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      align-items: center;
+      justify-content: left;
+    }
   }
   &__header{
     // position: absolute;
