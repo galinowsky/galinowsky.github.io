@@ -5,8 +5,8 @@
 body {
   background: white;
   color: black;
- 
-  font-family: 'Nunito', sans-serif;
+
+  font-family: "Nunito", sans-serif;
 }
 main {
   display: flex;
@@ -16,7 +16,7 @@ main {
   min-height: 100vh;
 }
 section {
-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -27,7 +27,7 @@ width: 100vw;
   &__front {
     color: $blue;
   }
-  &__anchor{
+  &__anchor {
     color: $text_link;
     text-decoration: none;
   }
@@ -35,21 +35,18 @@ width: 100vw;
     width: 212px;
     height: 130px;
     position: relative;
-    margin:64px auto 40px;
+    margin: 64px auto 40px;
     display: flex;
     justify-content: center;
     align-items: center;
-
-
-    
   }
   &__image {
     height: 96px;
     width: 96px;
     border-radius: 50%;
     margin: 16px;
- 
-    &-circle{
+
+    &-circle {
       background-color: $blue_lightest;
       height: 128px;
       width: 128px;
@@ -72,8 +69,7 @@ width: 100vw;
     font-weight: bold;
     font-size: 32px;
     text-align: center;
-    padding: auto  ;
-
+    padding: auto;
   }
   &__description {
     margin: 0 16px;
@@ -81,21 +77,20 @@ width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   }
-   &__header{
-  text-align: center;
-  font-size: 26px;
-  font-weight: bold;
-  line-height: 32px;
-  margin: 0 16px 16px;
-   }
-   &__paragraph{
+  }
+  &__header {
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 32px;
+    margin: 0 16px 16px;
+  }
+  &__paragraph {
     text-align: center;
     font-size: 16px;
     font-weight: 300;
     line-height: 32px;
     margin: 0 16px;
-     
   }
   &__contact {
     width: 278px;
@@ -115,21 +110,20 @@ width: 100vw;
   }
 }
 // ul > li::before{
- 
+
 //     content: url('../assets/img/small-tick_filled.svg');
 
- 
 // }
-.already-know>li:before{
-  content: url('../assets/img/small-tick.svg');
+.already-know > li:before {
+  content: url("../assets/img/small-tick.svg");
   margin-right: 12px;
 }
-.know-something>li:before{
-  content: url('../assets/img/small-tick_filled.svg');
+.know-something > li:before {
+  content: url("../assets/img/small-tick_filled.svg");
   margin-right: 12px;
 }
-.want-learn>li:before{
-  content: url('../assets/img/bullet.svg');
+.want-learn > li:before {
+  content: url("../assets/img/bullet.svg");
   margin-right: 12px;
 }
 
@@ -144,18 +138,18 @@ width: 100vw;
   &__emoji {
     font-size: 64px;
   }
-  &__list{
+  &__list {
     font-size: 16px;
     line-height: 32px;
     color: $blue_light;
     list-style: none;
     display: flex;
     flex-direction: column;
-      width: 87%;
+    width: 87%;
     justify-content: flex-start;
     padding-inline-start: 10px;
-    
-    &>li{
+
+    & > li {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -164,89 +158,106 @@ width: 100vw;
       font-weight: lighter;
     }
   }
-  &__header{
+  &__header {
     // position: absolute;
     // top: 64px;
     margin-top: 64px;
     font-size: 36px;
     font-weight: 500;
     color: white;
-
   }
-  &__category{
+  &__category {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-     width: 100%;
+    width: 100%;
     margin-bottom: 72px;
-   
-    &--header{
+
+    &--header {
       font-size: 24px;
       color: white;
       font-weight: lighter;
     }
   }
 }
-.contact {
-
-  background: $blue_light;
+.projects {
   width: 100vw;
-  height: 512px;
+  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-flow: column wrap;
   justify-content: flex-start;
-  &>*{
-    margin: 0 16px 0  ;
-  }
-  &__header{
-    color:$text_dark;
-    font-size: 36px;
+  align-items: center;
+  &__header {
     margin: 64px 16px 32px;
-  }
-  &__paragraph{
-    font-size:16px;
-    font-weight: 300;
+    font-size: 36px;
+    line-height: 48px;
     text-align: center;
-    margin-bottom: 56px;
+  }
+  &__paragraph {
+    color: $text_default;
+    font-size: 16px;
     line-height: 32px;
-    color: $text_default;;
-  }
-  &__media{
-    width: auto;
-    display: flex;
-    flex-flow:  wrap;
-    justify-content: space-around;
-    width: 70vw;
-    margin-bottom: 64px;
-  }
- 
-  &__circle{
-    background-color: white;
-    height: 48px;
-    width: 48px;
-    position: relative;
-    //  bottom: 0;
-    border-radius: 50%;
-    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
-  }
-  &__icon{
-    position: absolute;
-    top:12px;
-    left: 12px;
-    height: 24px;
-    width: 24px;
-    &--GH{
-      content: url('../assets/img/Git.svg');
-    }
-    &--Insta{
-    
-      content: url('../assets/img/Insta.svg');
-    }
-    &--FB{
-      
-      content: url('../assets/img/FB.svg');
-    }
+    text-align: center;
   }
 }
+  .contact {
+    background: $blue_light;
+    width: 100vw;
+    height: 512px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    & > * {
+      margin: 0 16px 0;
+    }
+    &__header {
+      color: $text_dark;
+      font-size: 36px;
+      margin: 64px 16px 32px;
+    }
+    &__paragraph {
+      font-size: 16px;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 56px;
+      line-height: 32px;
+      color: $text_default;
+    }
+    &__media {
+      width: auto;
+      display: flex;
+      flex-flow: wrap;
+      justify-content: space-around;
+      width: 70vw;
+      margin-bottom: 64px;
+    }
+
+    &__circle {
+      background-color: white;
+      height: 48px;
+      width: 48px;
+      position: relative;
+      //  bottom: 0;
+      border-radius: 50%;
+      box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    }
+    &__icon {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      height: 24px;
+      width: 24px;
+      &--GH {
+        content: url("../assets/img/Git.svg");
+      }
+      &--Insta {
+        content: url("../assets/img/Insta.svg");
+      }
+      &--FB {
+        content: url("../assets/img/FB.svg");
+      }
+    }
+  }
+
