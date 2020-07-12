@@ -151,9 +151,9 @@ width: 100vw;
     list-style: none;
     display: flex;
     flex-direction: column;
-    //  width: 100%;
+      width: 87%;
     justify-content: flex-start;
-
+    padding-inline-start: 10px;
     
     &>li{
       display: flex;
@@ -178,7 +178,7 @@ width: 100vw;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    // width: 100%;
+     width: 100%;
     margin-bottom: 72px;
    
     &--header{
@@ -221,9 +221,7 @@ width: 100vw;
     width: 70vw;
     margin-bottom: 64px;
   }
-  &__mail{
-    align-self:flex-end;
-  }
+ 
   &__circle{
     background-color: white;
     height: 48px;
