@@ -1,0 +1,67 @@
+.already-know > li:before {
+    content: url("../assets/img/small-tick.svg");
+    margin-right: 12px;
+  }
+  .know-something > li:before {
+    content: url("../assets/img/small-tick_filled.svg");
+    margin-right: 12px;
+  }
+  .want-learn > li:before {
+    content: url("../assets/img/bullet.svg");
+    margin-right: 12px;
+  }
+  
+  .skills {
+    background: $blue;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    // width: 100%;
+    &__emoji {
+      font-size: 64px;
+    }
+    &__list {
+      font-size: 16px;
+      line-height: 32px;
+      color: $blue_light;
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      width: 87%;
+      justify-content: flex-start;
+      padding-inline-start: 10px;
+  
+      & > li {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        font-weight: lighter;
+      }
+    }
+    &__header {
+      // position: absolute;
+      // top: 64px;
+      margin-top: 64px;
+      font-size: 36px;
+      font-weight: 500;
+      color: white;
+    }
+    &__category {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 72px;
+  
+      &--header {
+        font-size: 24px;
+        color: white;
+        font-weight: lighter;
+      }
+    }
+  }

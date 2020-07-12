@@ -1,0 +1,86 @@
+.hero {
+    &__front {
+      color: $blue;
+    }
+    &__anchor {
+      color: $text_link;
+      text-decoration: none;
+    }
+    &__image-container {
+      width: 212px;
+      height: 130px;
+      position: relative;
+      margin: 64px auto 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &__image {
+      height: 96px;
+      width: 96px;
+      border-radius: 50%;
+      margin: 16px;
+  
+      &-circle {
+        background-color: $blue_lightest;
+        height: 128px;
+        width: 128px;
+        position: absolute;
+        bottom: -16px;
+        border-radius: 50%;
+      }
+    }
+    &__cloud {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 178px;
+      height: 94.66px;
+      width: 225px;
+      background-color: $blue;
+      color: white;
+      border-radius: 16px;
+      height: 72px;
+      font-weight: bold;
+      font-size: 32px;
+      text-align: center;
+      padding: auto;
+    }
+    &__description {
+      margin: 0 16px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    &__header {
+      text-align: center;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 32px;
+      margin: 0 16px 16px;
+    }
+    &__paragraph {
+      text-align: center;
+      font-size: 16px;
+      font-weight: 300;
+      line-height: 32px;
+      margin: 0 16px;
+    }
+    &__contact {
+      width: 278px;
+      height: 48px;
+      background-color: $text_link;
+      color: white;
+      font-size: 20px;
+      line-height: 45px;
+      font-weight: 500;
+      text-decoration: none;
+      border-radius: 64px;
+      text-align: center;
+      vertical-align: central;
+      margin: 48px 21px;
+      display: inline-block;
+      box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+    }
+  }
