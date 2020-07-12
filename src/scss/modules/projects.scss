@@ -26,7 +26,13 @@
     border-radius: 16px;
     position: relative;
   }
-
+  &__category{
+      color:$console_grey_4;
+  }
+&__content{
+display: flex;
+flex-flow: column wrap;
+}
 &__dots{
         position: absolute;
         top:16px;
