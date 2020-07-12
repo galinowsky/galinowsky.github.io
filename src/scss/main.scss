@@ -196,18 +196,22 @@ width: 100vw;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   &>*{
-    margin: 64px 16px 0  ;
+    margin: 0 16px 0  ;
   }
   &__header{
     color:$text_dark;
     font-size: 36px;
+    margin: 64px 16px 32px;
   }
   &__paragraph{
     font-size:16px;
     font-weight: 300;
     text-align: center;
+    margin-bottom: 56px;
+    line-height: 32px;
+    color: $text_default;;
   }
   &__media{
     width: auto;
@@ -215,6 +219,7 @@ width: 100vw;
     flex-flow:  wrap;
     justify-content: space-around;
     width: 70vw;
+    margin-bottom: 64px;
   }
   &__mail{
     align-self:flex-end;
