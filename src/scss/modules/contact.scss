@@ -6,9 +6,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    & > * {
-      margin: 0 16px 0;
-    }
+    padding: 0 16px;
+    // & > * {
+    //   margin: 0 16px 0;
+    // }
     &__header {
       color: $text_dark;
       font-size: 36px;
