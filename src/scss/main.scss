@@ -16,7 +16,7 @@ main {
   min-height: 100vh;
 }
 section {
-  width: 100vw;
+width: 100vw;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -39,6 +39,8 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+
+
     
   }
   &__image {
@@ -46,6 +48,7 @@ section {
     width: 96px;
     border-radius: 50%;
     margin: 16px;
+ 
     &-circle{
       background-color: $blue_lightest;
       height: 128px;
@@ -108,6 +111,7 @@ section {
     vertical-align: central;
     margin: 48px 21px;
     display: inline-block;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
   }
 }
 // ul > li::before{
@@ -136,7 +140,7 @@ section {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  width: 100%;
+  // width: 100%;
   &__emoji {
     font-size: 64px;
   }
@@ -147,7 +151,7 @@ section {
     list-style: none;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    //  width: 100%;
     justify-content: flex-start;
 
     
@@ -174,7 +178,7 @@ section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    // width: 100%;
     margin-bottom: 72px;
    
     &--header{
@@ -184,12 +188,62 @@ section {
     }
   }
 }
-.footer {
+.contact {
+
   background: $blue_light;
-  width: 100%;
-  height: 568px;
+  width: 100vw;
+  height: 512px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  &>*{
+    margin: 64px 16px 0  ;
+  }
+  &__header{
+    color:$text_dark;
+    font-size: 36px;
+  }
+  &__paragraph{
+    font-size:16px;
+    font-weight: 300;
+    text-align: center;
+  }
+  &__media{
+    width: auto;
+    display: flex;
+    flex-flow:  wrap;
+    justify-content: space-around;
+    width: 70vw;
+  }
+  &__mail{
+    align-self:flex-end;
+  }
+  &__circle{
+    background-color: white;
+    height: 48px;
+    width: 48px;
+    position: relative;
+    //  bottom: 0;
+    border-radius: 50%;
+    box-shadow: 0px 4px 8px rgba(16, 112, 202, 0.15);
+  }
+  &__icon{
+    position: absolute;
+    top:12px;
+    left: 12px;
+    height: 24px;
+    width: 24px;
+    &--GH{
+      content: url('../assets/img/Git.svg');
+    }
+    &--Insta{
+    
+      content: url('../assets/img/Insta.svg');
+    }
+    &--FB{
+      
+      content: url('../assets/img/FB.svg');
+    }
+  }
 }
