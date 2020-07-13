@@ -26,8 +26,8 @@
     width: 100%;
     height: 40px;
     background-color: $console_grey_1;
-    border: radius 16px ;
-    
+    border-radius:  16px ;
+    z-index:1000;
   }
   &__proj {
     width: 296px;
