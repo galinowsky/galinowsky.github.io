@@ -39,7 +39,7 @@
 
   }
   &__proj {
-    width: 296px;
+    min-width: 296px;
     height: 320px;
     background-color: $console_grey_2;
     border-radius: 16px;
