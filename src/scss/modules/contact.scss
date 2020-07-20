@@ -51,6 +51,7 @@
     }
 
     @media (min-width:$desktop){
+      min-height: 380px;
       &__media {
         display: flex;
         flex-direction: row;  
