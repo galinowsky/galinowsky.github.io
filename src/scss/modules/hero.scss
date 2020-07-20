@@ -85,6 +85,9 @@
       &-container {
         // width: 402px;
         height: 228px;
+        margin: auto;
+        margin-top: 116px ;
+        margin-bottom: 72px;
       }
       &-circle {
         width: 240px;
@@ -103,15 +106,23 @@
       line-height: 40px;
     
     }
+    &__bracket{
+      display: flex;
+      flex-direction: row;  
+      margin: auto;
+      justify-content: center;
+      &::before {
+        content: url("./../assets/img/left_brack.svg");
+      }
+      &::after {
+        content: url("./../assets/img/right_brack.svg");
+      }
+    }
     &__description {
       width: 830px;
-      margin: auto;
-      // &::before {
-      //   content: url("./../assets/img/left_brack.svg");
-      // }
-      // &::after {
-      //   content: url("./../assets/img/right_brack.svg");
-      // }
+      // margin: auto;
+     
+  
     }
     &__cloud {
       display: unset;
