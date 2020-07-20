@@ -1,7 +1,7 @@
 .contact {
     background: $blue_light;
     width: 100vw;
-    height: 512px;
+    min-height: 512px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -15,6 +15,9 @@
       font-size: 36px;
       margin: 64px 16px 32px;
     }
+    &__mail {
+      margin:33px 21px;
+    }
     &__paragraph {
       font-size: 16px;
       font-weight: 300;
@@ -23,15 +26,45 @@
       line-height: 32px;
       color: $text_default;
       text-align: justify;
+      margin: 0 16px;
     }
-    &__media {
-      width: auto;
+    &__media{
       display: flex;
-      flex-flow: wrap;
-      justify-content: space-around;
-      width: 70vw;
-      margin-bottom: 64px;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      margin-top: 56px;
+
+      &-socials {
+        width: auto;
+        display: flex;
+        flex-flow: wrap;
+        justify-content: space-around;
+        width: 70vw;
+        max-width: 350px;
+        margin-bottom: 64px;
+      }
     }
+
+    &__mail {
+      margin-bottom:92px ;
+    }
+
+    @media (min-width:$desktop){
+      &__media {
+        display: flex;
+        flex-direction: row;  
+        align-items: center;
+        justify-content: center;
+        &-socials {
+          justify-content: center;
+        }
+      }
+      .contact__circle{
+        margin: 0 8px;
+      }
+    }
+
 
     &__circle {
       background-color: white;
