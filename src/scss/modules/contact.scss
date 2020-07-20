@@ -27,6 +27,7 @@
       color: $text_default;
       text-align: justify;
       margin: 0 16px;
+      text-align: center;
     }
     &__media{
       display: flex;
@@ -64,9 +65,15 @@
       .contact__circle{
         margin: 0 8px;
       }
+      &__paragraph{
+        font-size: 20px;
+      }
+      &__header{
+        font-size: 48px;
+      }
     }
 
-
+    
     &__circle {
       background-color: white;
       height: 48px;
