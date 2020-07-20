@@ -13,11 +13,14 @@
   
   .skills {
     background: $blue;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    position: relative;
+ 
+    &__table{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      position: relative;
+    }
     // width: 100%;
     &__emoji {
       font-size: 64px;
@@ -49,6 +52,7 @@
       font-size: 36px;
       font-weight: 500;
       color: white;
+      text-align: center;
     }
     &__category {
       display: flex;
@@ -63,5 +67,27 @@
         color: white;
         font-weight: lighter;
       }
+    }
+
+    @media (min-width:$desktop){
+      
+      &__table{
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0 128px 176px;
+      }
+      &__category{
+        width: 379px;
+        margin: 0 24px;
+      }
+    &__list {
+      margin-left: 100px;
+    }
+    &__header{
+      font-size: 48px;
+      margin: 80px 0 128px;
+    }
+
     }
   }
