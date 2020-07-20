@@ -74,12 +74,12 @@
       &__table{
         flex-direction: row;
         justify-content: center;
-        align-items: center;
-        margin: 0 128px 176px;
+        align-items: baseline;
+        margin: 0 0 176px;
       }
       &__category{
         width: 379px;
-        margin: 0 24px;
+        // margin: 0 12px;
       }
     &__list {
       margin-left: 100px;
