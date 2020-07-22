@@ -146,7 +146,7 @@
       align-items: center;
       @keyframes hello {
         0% {
-          transform: rotate(0deg) scale(1.3);
+        transform: rotate(0deg) scale(1.3);
         }
         100%{
          transform: rotate(50deg) scale(1.3);
@@ -156,12 +156,14 @@
         // to {transform: rotate(0deg);}
       }
       &-hand {
-        // transition: transform 0.1s linear;
-        display: inline-block;
-         animation: hello 0.3s  ease-in-out 4 alternate;
+        //  transition: transform 0.1s linear;
+        width: 30px;
+          display: inline-block;
+          //  animation: hello 0.3s  ease-in-out 4 alternate;
         &:hover{
           // transform: rotate(50deg);
           display: inline-block;
+          transform-origin: bottom right;
         animation: hello 0.3s  ease-in-out 4 alternate;
         }
   
