@@ -159,12 +159,13 @@
         //  transition: transform 0.1s linear;
         width: 30px;
           display: inline-block;
-          //  animation: hello 0.3s  ease-in-out 4 alternate;
+            animation: hello 0.3s 1.5s ease-in-out 5 alternate;
+            transform-origin: bottom right;
         &:hover{
           // transform: rotate(50deg);
           display: inline-block;
-          transform-origin: bottom right;
-        animation: hello 0.3s  ease-in-out 4 alternate;
+          // transform-origin: bottom right;
+        // animation: hello 0.3s  ease-in-out 4 alternate;
         }
   
        }
