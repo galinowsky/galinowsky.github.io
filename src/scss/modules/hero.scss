@@ -157,13 +157,14 @@
       }
       &-hand {
         //  transition: transform 0.1s linear;
+        position: relative;
         width: 30px;
           display: inline-block;
             animation: hello 0.3s 1.5s ease-in-out 5 alternate;
             transform-origin: bottom right;
         &:hover{
           // transform: rotate(50deg);
-          display: inline-block;
+          // 'display: inline-block;
           // transform-origin: bottom right;
         // animation: hello 0.3s  ease-in-out 4 alternate;
         }
@@ -174,8 +175,8 @@
       &-end {
         position: absolute;
         content: url("./../assets/img/Speech_cloud.svg");
-        top: 39px;
-        left: 245px;
+        top: 72px;
+        left: 26px;
         width: 24px;
         height: 24px;
       }
