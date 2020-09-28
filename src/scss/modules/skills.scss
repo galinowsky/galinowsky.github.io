@@ -10,10 +10,10 @@
     content: url("../assets/img/bullet.svg");
     margin-right: 12px;
   }
-  
+
   .skills {
     background: $blue;
- 
+    padding-bottom: 96px;
     &__table{
       display: flex;
       flex-direction: column;
@@ -33,9 +33,10 @@
       display: flex;
       flex-direction: column;
       width: 87%;
+      margin: 24px 77px;
       justify-content: flex-start;
       padding-inline-start: 10px;
-  
+      //
       & > li {
         display: flex;
         flex-wrap: wrap;
@@ -60,8 +61,8 @@
       justify-content: center;
       align-items: center;
       width: 100%;
-      margin-bottom: 72px;
-  
+      margin-top: 24px;
+
       &--header {
         font-size: 24px;
         color: white;
@@ -70,7 +71,7 @@
     }
 
     @media (min-width:$desktop){
-      
+
       &__table{
         flex-direction: row;
         justify-content: center;
@@ -83,6 +84,7 @@
       }
     &__list {
       margin-left: 100px;
+      max-width: 225px;
     }
     &__header{
       font-size: 48px;
